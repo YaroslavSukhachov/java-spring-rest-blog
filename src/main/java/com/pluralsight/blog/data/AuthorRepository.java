@@ -9,5 +9,4 @@ import java.util.List;
 
 @RepositoryRestResource(exported = false)
 public interface AuthorRepository extends JpaRepository<Author, Long> {
-    List<Post> findByAuthor_Lastname(String lastname);
 }
